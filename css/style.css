@@ -164,3 +164,26 @@ nav > ul > li > a:active {
 main {
   padding-top: 133px;
 }
+
+.linkedin {
+  max-width: 25px;
+}
+
+.behance {
+  max-width: 25px;
+}
+links {
+  display: inline-block;
+  width: 100%;
+}
+links > ul {
+  list-style-type: none;
+  padding: 0;
+}
+links > ul > li {
+  display: inline-block;
+}
+
+path {
+  fill: #fffffa;
+}
