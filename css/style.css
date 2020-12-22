@@ -74,7 +74,7 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border: 2px solid #b76e22;
-  transition-duration: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -96,7 +96,7 @@ a:active {
   color: #fffffa;
   text-transform: uppercase;
   border: 2px solid #b76e22;
-  transition-duration: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button.contact:hover {
@@ -232,18 +232,23 @@ footer {
   fill: #b76e22;
 }
 
-links {
+.links {
   display: inline-block;
   width: 100%;
 }
 
-links > ul {
+.links > ul {
   list-style-type: none;
   padding: 0;
 }
 
-links > ul > li {
+.links > ul > li {
   display: inline-block;
+}
+
+.svg8 {
+  display: inline-block;
+  width: 100%;
 }
 
 /* start of animation */
