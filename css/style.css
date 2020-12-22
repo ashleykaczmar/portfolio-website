@@ -126,8 +126,7 @@ header {
 }
 
 .row {
-  margin: 30px 0;
-  width: 100%;
+  margin: 30px;
 }
 
 .row::after {
@@ -157,6 +156,14 @@ header {
 
 #bestbakestitle h2 {
   text-align: center;
+}
+
+#evergreentitle h2 {
+  text-align: center;
+}
+
+#contact h2 {
+  text-transform: uppercase;
 }
 
 nav {
@@ -205,12 +212,24 @@ main {
   padding-top: 133px;
 }
 
+footer {
+  background-color: #24242b;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin: 0 auto;
+}
+
 .linkedin {
-  max-width: 25px;
+  max-width: 50px;
+  padding: 5px 5px;
+  fill: #b76e22;
 }
 
 .behance {
-  max-width: 25px;
+  max-width: 50px;
+  padding: 5px 5px;
+  fill: #b76e22;
 }
 
 links {
@@ -230,31 +249,13 @@ links > ul > li {
 /* start of animation */
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {fill:#d6298c;}
+  50% {fill:#d6ca29;}
+  100% {fill:#29d673;}
 }
 
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 10s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 20s cloud-move-reverse infinite alternate linear;
+.skyline {
+  animation: 5s color-change infinite alternate linear;
 }
 
 /* ==============================
@@ -305,6 +306,9 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  #contact h2 {
+    margin-bottom: 0;
+
 }
 
 /* ==============================
@@ -338,12 +342,16 @@ Large devices (1024px and larger)
     margin-top: 0;
   }
 
-  #bb-intro h2 {
-    margin-top: 0;
+  #bb-intro h2, h3, h4 {
+    margin-bottom: 0;
   }
 
-  #bb-intro h3 {
-    margin-top: 0;
+  #evergreen-intro h2, h3, h4 {
+    margin-bottom: 0;
+  }
+
+  #contact h2 {
+    margin-bottom: 0;
   }
 
 }
