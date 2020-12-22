@@ -21,18 +21,22 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -46,14 +50,17 @@ a {
   color: #b76e22;
   text-decoration: none;
 }
+
 a:visited {
   color: #fffffa;
 }
+
 a:hover
 a:focus {
   color: #b76e22;
   text-decoration: underline;
 }
+
 a:active {
   color: #aa5d1e;
 }
@@ -69,12 +76,14 @@ a:active {
   border: 2px solid #b76e22;
   transition-duration: 0.2s opacity;
 }
+
 .button:hover {
   background-color: #b76e22;
   color: #fffffa;
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button:active {
   background-color: #b76e22;
   color: #fffffa;
@@ -89,10 +98,12 @@ a:active {
   border: 2px solid #b76e22;
   transition-duration: 0.2s opacity;
 }
+
 .button.contact:hover {
   background-color: #aa5c1e;
   color: #fffffa;
 }
+
 .button.contact:active {
   background-color: #aa5c1e;
   color: #fffffa;
@@ -108,18 +119,29 @@ header {
   width: 100%;
   box-shadow: 0px 8px 5px 0px rgba(50, 50, 50, 0.65);
 }
+
 .container {
   padding: 0 15px;
+  width: 100%;
 }
-#work .row {
-  margin: 25px 0;
+
+.row {
+  margin: 30px 0;
 }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #hero {
   background-color: #373741;
   display: inline-block;
   width: 100%;
   padding: 20px;
 }
+
 #hero h1 {
   text-align: center;
 }
@@ -127,41 +149,53 @@ header {
 .logo {
   max-width: 250px;
 }
+
+#work h2 {
+  text-align: center;
+}
+
 nav {
   display: inline-block;
   width: 100%;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
+
 nav > ul > li {
   display: inline-block;
 }
+
 nav > ul > li > a {
   padding: 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #fffffa;
 }
+
 nav > ul > li > a:visited {
   padding: 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #b76e22;
 }
+
 nav > ul > li > a:hover {
   padding: 15px;
   text-transform: lowercase;
   font-weight: 700;
   color: #fffffa;
 }
+
 nav > ul > li > a:active {
   padding: 15px;
   text-transform: lowercase;
   font-weight: 700;
   color: #fffffa;
 }
+
 main {
   padding-top: 133px;
 }
@@ -173,20 +207,49 @@ main {
 .behance {
   max-width: 25px;
 }
+
 links {
   display: inline-block;
   width: 100%;
 }
+
 links > ul {
   list-style-type: none;
   padding: 0;
 }
+
 links > ul > li {
   display: inline-block;
 }
 
-path {
-  fill: #fffffa;
+/* start of animation */
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 10s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 20s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -197,24 +260,42 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 10px 0 3px
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 20px;
   }
+
   #hero {
     text-align: center;
   }
+
   #hero span {
     display: block;
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  #work h3 {
+    margin-top: 0;
   }
 
   #about-page h3 {
     margin-top: 0;
   }
+
+  #bb-intro h3 {
+    margin-top: 0;
+  }
+
 }
 
 /* ==============================
@@ -226,30 +307,26 @@ Large devices (1024px and larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
   }
+
   .col-lg-7 {
-    width: 50%;
+    width: 58.33%;
   }
-  }
+
   .col-lg-5 {
-    width: 20%;
+    width: 41.66%;
   }
-}
 
-/* ==============================
-X-large devices (1440px and larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+  #work h3 {
+    margin-top: 0;
+  }
 
-}
+  #about-page h3 {
+    margin-top: 0;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
