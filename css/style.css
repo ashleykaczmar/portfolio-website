@@ -127,6 +127,7 @@ header {
 
 .row {
   margin: 30px 0;
+  width: 100%;
 }
 
 .row::after {
@@ -151,6 +152,10 @@ header {
 }
 
 #work h2 {
+  text-align: center;
+}
+
+#bestbakestitle h2 {
   text-align: center;
 }
 
@@ -292,6 +297,10 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
+  #bb-intro h2 {
+    margin-top: 0;
+  }
+
   #bb-intro h3 {
     margin-top: 0;
   }
@@ -326,6 +335,14 @@ Large devices (1024px and larger)
   }
 
   #about-page h3 {
+    margin-top: 0;
+  }
+
+  #bb-intro h2 {
+    margin-top: 0;
+  }
+
+  #bb-intro h3 {
     margin-top: 0;
   }
 
