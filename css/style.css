@@ -246,8 +246,7 @@ footer {
   display: inline-block;
 }
 
-.svg8 {
-  display: inline-block;
+.skyline-outline {
   width: 100%;
 }
 
@@ -313,6 +312,7 @@ Medium devices (640px and larger)
 
   #contact h2 {
     margin-bottom: 0;
+  }
 
 }
 
@@ -358,5 +358,4 @@ Large devices (1024px and larger)
   #contact h2 {
     margin-bottom: 0;
   }
-
 }
