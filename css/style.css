@@ -147,7 +147,7 @@ header {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 #work h2 {
@@ -285,6 +285,10 @@ Medium devices (640px and larger)
     display: block;
   }
 
+  .logo {
+    max-width: 250px;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 0 10px;
@@ -324,6 +328,10 @@ Large devices (1024px and larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .logo {
+    max-width: 250px;
   }
 
   [class*="col-"] {
