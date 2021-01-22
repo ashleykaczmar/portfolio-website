@@ -56,6 +56,10 @@ img {
   transition: 0.2s opacity;
 }
 
+.button:visited {
+  color: #fff;
+}
+
 .button:hover {
   background-color: #9e1e4f;
   color: #fff;
@@ -91,6 +95,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow: 0 8px 5px 0 rgba(50, 50, 50, 0.1);
+  padding: 10px;
 }
 
 main {
@@ -156,7 +161,7 @@ main {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 12px;
+  top: 5px;
   font-size: 20px;
   padding-right: 10px;
   color: #3c3c3c;
@@ -174,6 +179,8 @@ main {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  height: 0;
 }
 
 nav > ul > li {
@@ -205,6 +212,10 @@ nav > ul > li > a:active {
   text-transform: none;
   font-weight: 700;
   color: #5c5c5c;
+}
+
+.navtoggle.responsive nav > ul {
+  height: 130px;
 }
 
 footer {
@@ -298,8 +309,17 @@ Medium devices (640px and larger)
     padding: 0 10px;
   }
 
+  [class*="col-"] p:first-child {
+    margin-top: 0;
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  #headshot {
+    display: block;
+    margin-top: 5px;
   }
 
   #work h3 {
