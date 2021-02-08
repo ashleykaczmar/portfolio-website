@@ -109,7 +109,7 @@ main {
 }
 
 .row {
-  margin: 30px;
+  margin: 15px;
 }
 
 .row::after {
@@ -131,18 +131,26 @@ main {
   margin-bottom: 2px;
 }
 
-#work h2 {
+#work h1, h2 {
   text-align: center;
 }
 
-#bestbakestitle h2 {
+#saveurtitle h1, h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
-#evergreentitle h2 {
+#evergreentitle h1, h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#bookmarkedtitle h1, h2 {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 #skillstolls h3 {
@@ -330,11 +338,11 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  #bb-intro h2 {
+  #saveur-intro h2 {
     margin-top: 0;
   }
 
-  #bb-intro h3 {
+  #saveur-intro h3 {
     margin-top: 0;
   }
 
@@ -371,7 +379,7 @@ Large devices (1024px and larger)
     margin-top: 0;
   }
 
-  #bb-intro h2,
+  #saveur-intro h2,
   h3,
   h4 {
     margin-bottom: 0;
